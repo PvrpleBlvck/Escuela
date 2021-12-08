@@ -4,5 +4,5 @@
 > Find the sum of all the multiples of 3 or 5 below 1000.
 
 # So how do we tackle problem
-> This one is very easy::::::and running this is very easy. Please visit the readme file (https://github.com/PvrpleBlvck/Pvrple_Blvck_Learning)
+> This one is very easy::::::and so is running this. Please visit the readme file (https://github.com/PvrpleBlvck/Pvrple_Blvck_Learning)
 - ## Step One
