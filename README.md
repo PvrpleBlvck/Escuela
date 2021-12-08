@@ -1,7 +1,7 @@
 # Pvrple_Blvck_Learning
-My name is August. And this is my python learning journey which start from the projecteuler.net problem sets. Which i will updating regularly as i discover new ideas and ways to solve problems.
+> My name is August. And this is my python learning journey which start from the projecteuler.net problem sets. Which i will updating regularly as i discover new ideas and ways to solve problems.
 
-##For simplicity, all the current files are written in Python 3.9
+## For simplicity, all the current files are written in Python 3.9
 
 To run the file, head to your project file location example/projecteuler.net/filename/py
 Open command prompt in the current folder and type:
