@@ -7,7 +7,7 @@
 
 
 ### Ofcourse there're better ways of doing this,a more radical way would be ti just use a for loop
-pvrple=0
+""" pvrple=0
 for a in range(999,99,-1):
     for b in range(999,99,-1):
                 c=a*b
@@ -22,4 +22,4 @@ for a in range(999,99,-1):
                     else:
                         pass    
                 else :
-                    pass
+                    pass """
