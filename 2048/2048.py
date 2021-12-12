@@ -1,3 +1,6 @@
+#pvrple 2048
+
+
 from tkinter import *
 from tkinter import messagebox
 import random
