@@ -7,8 +7,10 @@
 
 
 ### Ofcourse there're better ways of doing this,a more radical way would be to just use a for loop
+
 >
 """ pvrple=0
+>
 for a in range(999,99,-1):
     for b in range(999,99,-1):
                 c=a*b
