@@ -19,6 +19,7 @@
             yield x 
             x,y = y, x+y
 > Secondly the even function, which returns even numbers. The best way to look at this is just to think of how you would print out even numbers from a given list.
+> 
     def even(seq):
         for number in seq:
             if not number % 2:
@@ -27,6 +28,7 @@
 > Take seq as just a normal list of numbers.
 
 > Our third and last function which takes our sequence and we use for loop if function to check if we reach a certain  number.
+> 
     def under_four_billion(seq):
         for number in seq:
             if number > 4000000:
