@@ -6,3 +6,32 @@
 > By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 ### On this one i had a different approach, however my mentor showed somthing different. I will explain everything.
+
+### Python return statement is not suitable when we have to return a large amount of data. In this case, yield expression is useful to return only part of the data and save memory. So in this case we use Yield as it returns a generator.
+
+### This time,i decided to break the problem into 3 pieces.
+> First if the fib function which return fibonacci numbers. This is pretty easy.
+
+>
+	def fib():
+        x,y = 0,1
+        while True:
+            yield x 
+            x,y = y, x+y
+> Secondly the even function, which returns even numbers. The best way to look at this is just to think of how you would print out even numbers from a given list.
+    def even(seq):
+        for number in seq:
+            if not number % 2:
+                yield number
+
+> Take seq as just a normal list of numbers.
+
+> Our third and last function which takes our sequence and we use for loop if function to check if we reach a certain  number.
+    def under_four_billion(seq):
+        for number in seq:
+            if number > 4000000:
+                break
+            yield number 
+
+
+# Thank you!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
