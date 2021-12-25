@@ -29,3 +29,10 @@ class test:
 # git merge feature/contact-form
 
 print('H')
+
+
+
+#git remote add new-remote-repo https://hostname/user/repo.git
+# Add remote repo to local repo config
+#git push <new-remote-repo> test_branch~
+# pushes the test_branch branch to new-remote-repo
