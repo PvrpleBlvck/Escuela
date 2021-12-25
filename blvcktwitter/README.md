@@ -1,4 +1,20 @@
 # Well ,the simplest way to go about this would be to do it like this...
+
+### This app is going to
+
+> Create a tweet
+
+>check timeline
+
+>get username ,details
+
+>follow a user
+
+> like most recent tweet
+> see blocked contacts
+
+> search for a tweet
+
 ### First you would need to install twitterAPI using pip(windows)
 > pip install twitterAPI
 ### then import it as well as json
@@ -39,12 +55,6 @@ r = api.request('direct_messages/events/new', json.dumps(event))
 print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text)
 
 # Now, in this project i am going to use tweepy to familiarize myself with it
-### This project will perform the following:
-> FETCH DMs sent to twitter
-                   
-> send a msg
-                   
-> del a msg
                    
 ### And as always the first is to apply for a twitter dev account at  (https://developer.twitter.com/en/portal/)
 
