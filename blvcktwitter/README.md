@@ -41,7 +41,10 @@ print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text)
 # Now, in this project i am going to use tweepy to familiarize myself with it
 ### This project will perform the following:
 > FETCH DMs sent to twitter
+                   
 > send a msg
+                   
 > del a msg
+                   
 ### And as always the first is to apply for a twitter dev account at  (https://developer.twitter.com/en/portal/)
 
