@@ -1,8 +1,15 @@
 import tweepy
+import os
+
+TWITTER_API_KEY = os.getenv('TWITTER_API_KEY')
+TWITTER_API_KEY_SECRET = os.getenv('TWITTER_API_KEY_SECRET')
+TWITTER_ACCESS_TOKEN = os.getenv('TWITTER_ACCESS_TOKEN')
+TWITTER_ACCESS_TOKEN_SECRET = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("TWITTER_API_KEY", "TWITTER_API_KEY_SECRET")
-auth.set_access_token("TWITTER_ACCESS_TOKEN", "TWITTER_ACCESS_TOKEN_SECRET")
+auth = tweepy.OAuthHandler("cGoEPcAFLRV7yho8OFsVnzVge", "Tl9Bl3o5DyvzRbO8tgrN7GROuNeDONVLwmBYTgTeOFdyE7oGGA")
+auth.set_access_token("1572023088-h4Qney3hlDyAdxkHn5FVHXRqCKKrzQoTNazP6UE", "VHdE6EQ5R50SrIrCvcFa4bnzzer0iVgi75XVcUUAjkotg")
+
 
 # Create API object
 api = tweepy.API(auth)
@@ -40,10 +47,10 @@ for follower in user.followers():
 api.update_profile(description="I AM Pvrple Blvck.by TweepyBot")
 
 #Like most recent tweet
-tweets = api.home_timeline(count=1)
+'''tweets = api.home_timeline(count=1)
 tweet = tweets[0]
 print(f"Liking tweet {tweet.id} of {tweet.author.name}")
-api.create_favorite(tweet.id)
+api.create_favorite(tweet.id)'''
 
 
 #See blocked contacts
@@ -56,7 +63,8 @@ for tweet in api.search(q="Bitcoin", lang="en", rpp=10):
     print(f"{tweet.user.name}:{tweet.text}")
 
 
-#Trends trends_result = api.trends_place(1)
+#Trends 
+trends_result = api.trends_place(1)
 for trend in trends_result[0]["trends"]:
     print(trend["name"])
 
