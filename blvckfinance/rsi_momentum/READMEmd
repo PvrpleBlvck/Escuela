@@ -1,0 +1,49 @@
+What is a Momentum Strategy?
+A momentum strategy basically bets on the continuation of an existing market trend. For example, if the market is or starts going up, we will bet that the trend will continue for a while and we will try to make our trading strategy based on this.
+
+Momentum indicators can help us locate the entry and exit points to follow momentum strategies. One of this type of indicators is the Relative Strength Index (RSI). This indicator is the one that we will use in order to define our backtesting strategy with Python.
+
+Relative Strength Index (RSI)
+The Relative Strength Index (RSI) is a technical indicator that measures the speed and change of price movements. It was developed by J. Welles Wilder.
+
+The RSI moves from 0 to 100. To set up a trading strategy following RSI, it is common to open a long position (buy the stock) if the RSI indicator goes above the level 30 from below. At that point, the stock is seen as oversold.
+
+On the other side, when the RSI indicator on a stock goes above 70, the stock is considered to be overbought. That is, if the RSI on the stock crosses the level 70 from above, we should enter into a short position.
+
+Since I am not a big fan of going short, we will keep our strategy to only enter long positions.
+
+As it was suggested by the RSI developer, J. Welles Wilder , we will use a length of 14 periods to calculate the indicator.
+
+RSI is calculated as follows:
+
+RSI = 100 – (100 / (1 + RS)
+Where RS is:
+
+RS = Average Gain / Average Loss
+Backtesting RSI Momentum Strategies using Python
+Our momentum strategy to backtest will be quite easy to build. We will use the last 5 years of Apple stock prices.
+
+As already mentioned before, we will enter a long position if the stock crosses the level 30 RSI indicator from below.
+
+To do this, we will calculate the RSI indicator using the 14 days moving average  (To know more on moving averages in Python have a look at my previous post). Then, based on the RSI indicator and the stock closing prices of the day, we will define if we go long or if we do not hold any position on that stock for each of the days.
+
+Calculating RSI with Python
+We will start by calculating the RSI indicator for each of the 5 historical years. To do that, we need first to request from an API the last 5 years historical prices of Apple. I will use financialmodelingprep to get the stock prices.
+
+Note that you need to sign up to financialmodelingprep in order to get your private API key. You can get one for free with up to 250 API requests a month. Alternatively, you can use another data source to get the stock prices for each of the days.
+
+Below you can find the first part of the code. The aim is to get a Pandas DataFrame containing the closing price, return and movement for each of the days.
+
+In addition, this DataFrame will also contain a column named up where we will get an amount only if the price of the stock goes up. The amount will be the daily price movement in absolute terms,. Otherwise, we will have 0 in the column.
+
+Similarly, we will have a column named down where we will get the price movement of the day only if the price of the stock goes down for that day.
+
+As suggested by the creator of the RSI indicator, we will have a 14 day period length. We will use that period length to calculate the 14 days period gain moving average and store in a variable named up. Note that the moving average is only calculated using the last 14 days. Where for the up column, we only have a value if the price movement of the day was positive (if not we will have a 0). Similar approach to calculate the down variable.
+
+Now that we have calculated the last 14 days average gains and the 14 days average loss. We can calculate RS by dividing these two variables.
+
+Finally, we are able to calculate the RSI applying below formula. The RSI variable will contain a Pandas series with the RSI indicator calculated for each of the days.
+
+RSI = 100 – (100 / (1 + RS)
+
+Below is the first part of the code. After running the script, we will end up having a Pandas DataFrame with all stock information and a RSI series containing the RSI indicator for each of the days. In the next section, we will merge the DataFrame and the Series and apply our strategy.
