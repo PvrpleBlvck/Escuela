@@ -16,10 +16,14 @@
 * search for a tweet
 
 ### First you would need to install twitterAPI using pip(windows)
-> pip install twitterAPI
+```
+$ pip install twitterAPI
+```
 ### then import it as well as json
-> from TwitterAPI import TwitterAPI
+```
+from TwitterAPI import TwitterAPI
 import json
+```
 > Now we need to assign our keys inorder to access the api and be able to send messages and whatnot
 > But first we need to create a twitter app,where we get our api's
 > I wont go into too much detail,but if you go to your twitter settings>scroll down to developers>
