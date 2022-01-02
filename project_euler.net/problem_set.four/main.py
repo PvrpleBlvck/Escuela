@@ -1,4 +1,4 @@
-def pvrle():
+def pvrple():
 	ans = max(p * q
 		for p in range(100, 1000)
 		for q in range(100, 1000)

@@ -6,3 +6,6 @@ def is_prime(m):
     return all(m % i for i in range(2, m - 1))
   
 print(Biggest_Prime_Factor(600851475143))
+print(Biggest_Prime_Factor(6008514))
+print(Biggest_Prime_Factor(5143))
+print(Biggest_Prime_Factor(6008))

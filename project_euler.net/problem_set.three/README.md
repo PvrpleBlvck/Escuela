@@ -34,5 +34,31 @@
 
 > Lastly, we call our function and ta-da!
 
-### Thank you!!!!!!!!!!!!!!
+### Now i am going to conduct unit testing for this code
 
+
+> So first we import unittest which is a builtin module as
+ ### import unittest
+ > Secondly we import our python file as
+ ### import main.py
+ ## we define a class and name it anything, am naming mine as below and we pass unittest.TestCase as arg
+> class BestPrimeTest(unittest.TestCase):
+# Now we define a function that's and pass in (self), remember if you don't pass (self), you will run into TypeError
+>    def test_biggest_prime(self):
+### From there we just initialize our func . 
+> self.assertEqual(main.Biggest_Prime_Factor(600851475143),6857)
+> Everything looks perfect, now let's run our python file. 
+### python unitest.py
+
+'''6857
+58907
+139
+751
+.'''
+----------------------------------------------------------------------
+### Ran 1 test in 25.301s
+
+### OK
+> That's the results, which means everything is well set.
+
+# Thank you If there's anything you would love add to please do not hesitate to make a contribution or get in touch with for any corrections, questions and or assistance!
