@@ -1,4 +1,4 @@
-# Well ,the simplest way to go about this would be to do it like this...
+### Well ,the simplest way to go about this would be to do it like this...
 
 ### This app is going to
 
@@ -61,7 +61,7 @@ print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text)
 
 
 
-# Now, in this project i am going to use tweepy to familiarize myself with it
+### Now, in this project i am going to use tweepy to familiarize myself with it
                    
 ### And as always the first is to apply for a twitter dev account at  (https://developer.twitter.com/en/portal/)
 
