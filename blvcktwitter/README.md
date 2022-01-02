@@ -2,18 +2,18 @@
 
 ### This app is going to
 
-> Create a tweet
+* Create a tweet
 
->check timeline
+* check timeline
 
->get username ,details
+* get username ,details
 
->follow a user
+* follow a user
 
-> like most recent tweet
-> see blocked contacts
+* like most recent tweet
+* see blocked contacts
 
-> search for a tweet
+* search for a tweet
 
 ### First you would need to install twitterAPI using pip(windows)
 > pip install twitterAPI
