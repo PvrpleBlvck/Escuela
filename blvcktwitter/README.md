@@ -31,7 +31,9 @@ import json
 > From here on,everything is simple
 
 
-```api = TwitterAPI(<consumer key>,
+```
+
+api = TwitterAPI(<consumer key>,
                  <consumer secret>,
                  <access token key>,
                  <access token secret>)
