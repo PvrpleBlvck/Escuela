@@ -29,7 +29,9 @@ import json
 > .env . and importing these into your main file is as simple as e.g(access_token=os.getenv('name_of_the_string'))
 > And of course we have to (import os) first
 > From here on,everything is simple
-api = TwitterAPI(<consumer key>,
+
+
+```api = TwitterAPI(<consumer key>,
                  <consumer secret>,
                  <access token key>,
                  <access token secret>)
@@ -52,7 +54,10 @@ event = {https://developer.twitter.com/en/portal/dashboard
 }
 
 r = api.request('direct_messages/events/new', json.dumps(event))
-print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text)
+print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text) 
+```
+
+
 
 # Now, in this project i am going to use tweepy to familiarize myself with it
                    
