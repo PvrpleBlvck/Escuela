@@ -7,8 +7,8 @@ TWITTER_ACCESS_TOKEN = os.getenv('TWITTER_ACCESS_TOKEN')
 TWITTER_ACCESS_TOKEN_SECRET = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("cGoEPcAFLRV7yho8OFsVnzVge", "Tl9Bl3o5DyvzRbO8tgrN7GROuNeDONVLwmBYTgTeOFdyE7oGGA")
-auth.set_access_token("1572023088-h4Qney3hlDyAdxkHn5FVHXRqCKKrzQoTNazP6UE", "VHdE6EQ5R50SrIrCvcFa4bnzzer0iVgi75XVcUUAjkotg")
+auth = tweepy.OAuthHandler("TWITTER_API_KEY", "TWITTER_API_KEY_SECRET")
+auth.set_access_token("TWITTER_ACCESS_TOKEN", "TWITTER_ACCESS_TOKEN_SECRET")
 
 
 # Create API object
