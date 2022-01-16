@@ -8,3 +8,10 @@
 > pandas_insti.py
 > bitcoin_price/main.py
 > stock_return_corr/main.py
+
+
+> Hey buddie, lets connect and share ideas
+
+- [LinkedIn](https://www.linkedin.com/in/nore-yahm/)
+- [Twitter](https://twitter.com/pvrple_blvck/)
+- [Medium](https://pvrpleblvck.medium.com/)
