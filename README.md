@@ -10,9 +10,18 @@
 > If you do not have python installed follow the link (https://www.python.org/downloads/)
 > Download and follow prompt to run install.
 
-''' If you have any questions , feel free to raise an issue or email me. '''
+``` 
+If you have any questions , feel free to connect with me by raising an issue or
+
+```
+- [LinkedIn](https://www.linkedin.com/in/nore-yahm/)
+- [Twitter](https://twitter.com/pvrple_blvck/)
+- [Medium](https://pvrpleblvck.medium.com/)
+- 
 # https://github.com/git-guides/git-init
 > Git documentation.
+
+##### Thank you
 
 
 
