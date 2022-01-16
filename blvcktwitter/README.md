@@ -69,3 +69,11 @@ print('SUCCESS' if r.status_code == 200 else 'PROBLEM: ' + r.text)
                    
 ### And as always the first is to apply for a twitter dev account at:  `(https://developer.twitter.com/en/portal/)`
 
+
+
+> Hey buddie, lets connect and share ideas
+
+- [LinkedIn](https://www.linkedin.com/in/nore-yahm/)
+- [Twitter](https://twitter.com/pvrple_blvck/)
+- [Medium](https://pvrpleblvck.medium.com/)
+
